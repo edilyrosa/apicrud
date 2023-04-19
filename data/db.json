@@ -2,16 +2,6 @@
   "santos": [
     {
       "nombre": "Shaka",
-      "constelacion": "we",
-      "id": 8
-    },
-    {
-      "nombre": "Shaka",
-      "constelacion": "we",
-      "id": 9
-    },
-    {
-      "nombre": "Shaka",
       "constelacion": "wey",
       "id": 10
     },
@@ -79,6 +69,11 @@
       "nombre": "Shaka",
       "constelacion": "we",
       "id": 23
+    },
+    {
+      "nombre": "Shaka",
+      "constelacion": "we",
+      "id": 24
     }
   ],
   "dioses": [
