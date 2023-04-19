@@ -8,7 +8,7 @@ const $fragment = d.createDocumentFragment();
 const endPointSantos = 'http://localhost:3000/santos'
 
 const doFetch = async (options) =>{
-    if(typeof options !== 'object') console.warn('el parametro esperado por la funcion doFetch debe ser un objeto')
+    if(typeof options !== 'object') console.warn('The parameter waited by the function doFetch must be an Object')
     let {url, method, success, error, data} = options
    $loader.style.display = "block";
     try {

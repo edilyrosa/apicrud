@@ -1,111 +1,24 @@
 {
   "santos": [
     {
-      "nombre": "Shaka",
-      "constelacion": "wey",
-      "id": 10
-    },
-    {
-      "nombre": "Shaka",
-      "constelacion": "segundo",
-      "id": 11
-    },
-    {
-      "nombre": "Shaka1",
-      "constelacion": "quinto",
-      "id": 12
-    },
-    {
-      "nombre": "dos",
-      "constelacion": "we",
-      "id": 13
-    },
-    {
-      "nombre": "Shaka",
-      "constelacion": "we",
-      "id": 14
-    },
-    {
-      "nombre": "Shaka",
-      "constelacion": "we",
-      "id": 15
-    },
-    {
-      "nombre": "dos",
-      "constelacion": "we",
-      "id": 16
-    },
-    {
-      "nombre": "Shaka",
-      "constelacion": "we",
-      "id": 17
-    },
-    {
-      "nombre": "dos",
-      "constelacion": "we",
-      "id": 18
-    },
-    {
-      "nombre": "Shaka",
-      "constelacion": "we",
-      "id": 19
-    },
-    {
-      "nombre": "dos",
-      "constelacion": "we",
-      "id": 20
-    },
-    {
-      "nombre": "Shaka",
-      "constelacion": "quinto",
-      "id": 21
-    },
-    {
-      "nombre": "dos",
-      "constelacion": "we",
-      "id": 22
-    },
-    {
-      "nombre": "Shaka",
-      "constelacion": "we",
-      "id": 23
-    },
-    {
-      "nombre": "Shaka",
-      "constelacion": "we",
-      "id": 24
-    }
-  ],
-  "dioses": [
-    {
       "id": 1,
-      "nombre": "unooo",
-      "constelacion": "primerooo"
+      "name": "eli",
+      "email": "ely@"
     },
     {
-      "id": 2,
-      "nombre": "dosss",
-      "constelacion": "segundoooo"
+      "name": "PEPSI",
+      "email": "roro@gmail.com",
+      "id": 2
     },
     {
-      "id": 3,
-      "nombre": "tressss",
-      "constelacion": "terceroooo"
+      "name": "undefined",
+      "email": "Humblor",
+      "id": 3
     },
     {
-      "id": 4,
-      "nombre": "cuatroooo",
-      "constelacion": "cuartoooo"
-    },
-    {
-      "id": 5,
-      "nombre": "cincooo",
-      "constelacion": "quintoooo"
-    },
-    {
-      "id": 6,
-      "nombre": "seisss",
-      "constelacion": "sextoooo"
+      "name": "PEPSI",
+      "email": "roro@gmail.com",
+      "id": 4
     }
   ]
 }

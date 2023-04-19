@@ -7,7 +7,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='./style/vista.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./style/index.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='./style/Loader.css'>
    
     <script src='main.js'></script>
@@ -15,16 +15,21 @@
 
 <body>
     <h1 class="main-title">CRUD API REST AJAX 🚀</h1>
-    <section class="crud">
+
+    <div class="msj" style="display:none"> 
+        <p></p>
+    </div> 
+
+    <section class="crud" >
         
         <article>
-            <h2 class="crud-title"> Agregar Santos</h2>
+            <h2 class="crud-title"> Add Record</h2>
             <form class='crud-form'>
-                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="text" name="name" placeholder="Write your name" required>
                 <br>
-                <input type="text" name="constelacion" placeholder="Constelacion" required>
+                <input type="text" name="email" placeholder="Write your email" required>
                 <br>
-                <input type="submit" value="Enviar">
+                <input type="submit" value="Send">
                 <input type="hidden" name="id">
             </form>
         </article>
@@ -33,15 +38,15 @@
             <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
         </section>
 
-
         <article class="crud-title">
-            <h2>Ver Santos</h2>
+            <h2>Watch Records</h2>
             <table class="crud-table">
                 <thead>
                     <tr>
-                        <th>Nombre</th>
-                        <th>Constelacion</th>
-                        <th>Accion</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Image</th>
+                        <th>Action</th>
                     </tr>
                 </thead>
 
@@ -56,11 +61,14 @@
 
     <template id="crud-template">
         <tr>
-            <td class="name"></td>
-            <td class="constellation"></td>
+            <td class="nameEn"></td>
+            <td class="emailEn"></td>
             <td>
-                <button class="edit">Editar</button>
-                <button class="delete">Eliminar</button>
+                 <img class="imgEn" alt="animals" />
+             </td>
+            <td>
+                <button class="edit">Edit</button>
+                <button class="delete">Delete</button>
             </td>
         </tr>
      </template>

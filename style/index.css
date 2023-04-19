@@ -71,6 +71,10 @@ html {
     border-bottom: thin solid #dedede;
   }
   
+  tr:hover{
+    opacity: 0.6;
+  }
+
   @media screen and (min-width: 1024px) {
     .grid-1-2 {
       display: grid;
@@ -123,9 +127,9 @@ html {
     color: var(--primary-color);
     max-width: 100%;
     font-size: 2.5rem;
-    width: 22ch;
+    width: 21ch;
   
-    animation: typing 4s steps(22), blink 0.5s infinite step-end alternate;
+    animation: typing 3s steps(21), blink 0.5s infinite step-end alternate;
     overflow: hidden;
   }
 
@@ -141,3 +145,18 @@ html {
       border-color: transparent;
     }
   }
+
+  .msj{
+    padding: 5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    background-color: red
+  }
+
+  
+img{
+  max-width: 100%;
+  height: auto;
+}
