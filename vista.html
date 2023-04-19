@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>CRUD API REST AJAX</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./vista.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./Loader.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <h1 class="main-title">CRUD API REST AJAX</h1>
+    <section class="crud">
+        
+        <article>
+            <h2 class="crud-title"> Agregar Santos</h2>
+            <form class='crud-form'>
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <br>
+                <input type="text" name="constelacion" placeholder="Constelacion" required>
+                <br>
+                <input type="submit" value="Enviar">
+                <input type="hidden" name="id">
+            </form>
+        </article>
+        <br/>
+        <section class="seccion-loader" style="display:none"> 
+            <div class="lds-ring"><div></div><div></div><div></div><div></div>
+            </div>
+        </section>
+
+
+        <article class="crud-title">
+            <h2>Ver Santos</h2>
+            <table class="crud-table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Constelacion</th>
+                        <th>Accion</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    
+                </tbody>
+
+            </table>
+        </article>
+
+    </section>
+
+    <template id="crud-template">
+        <tr>
+            <td class="name"></td>
+            <td class="constellation"></td>
+            <td>
+                <button class="edit">Editar</button>
+                <button class="delete">Eliminar</button>
+            </td>
+        </tr>
+     </template>
+
+     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <!-- <script src="./vistaFetch.js" type="module"></script>  -->
+    <script src="./vistaAxios.js" type="module"></script> 
+
+</body>
+</html>
