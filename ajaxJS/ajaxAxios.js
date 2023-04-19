@@ -46,8 +46,8 @@ const getAll = () =>{
                
                 //$table.insertAdjacentHTML("afterend",`<p><b>There isn't Data</b></p>`) 
             }
-            //!Damos contenido a las tags templetes del DOM con la res, pintandolas
-            //!ademas crea datasets a cada botones por registro, para que a su onClick sepan que elemento borar o editar.
+            //!Giving content to the tmeplets tags of DOM with the response, print it.
+            //!Creating datasets for every button, which onClick get the register to edit or delete.
             json.map(e =>{
                 $template.querySelector('.nameEn').textContent = e.name;
                 $template.querySelector('.emailEn').textContent = e.email;
@@ -55,7 +55,7 @@ const getAll = () =>{
                 $template.querySelector('.imgEn').src = "https://placekitten.com/100/60";
                 
                 $template.querySelector('.edit').dataset.id = e.id;
-                $template.querySelector('.edit').dataset.nameEn = e.nombre;
+                $template.querySelector('.edit').dataset.nameEn = e.name;
                 $template.querySelector('.edit').dataset.emailEn = e.email;
                 $template.querySelector('.delete').dataset.id = e.id;
         
@@ -70,13 +70,13 @@ const getAll = () =>{
 }
 
 d.addEventListener('DOMContentLoaded', () =>{
-    //!This function loads on the DOM all the info from axios(GET ALL)
+    //!This function loads on the DOM all the records from axios(GET ALL)
     getAll()
 })
 
 d.addEventListener('submit', async (e) =>{
 
-    //!This function sends the form to the API REST. Determining if is POST or PUT through the existence of the id
+    //!This function sends the data's form to the API REST. Determining if is POST or PUT through the existence of the id
     const listenForm = e.target;
     if(listenForm === $form) {
         const idRegistro = listenForm.id.value; //From of input hidden name="id"
@@ -98,7 +98,7 @@ d.addEventListener('submit', async (e) =>{
         if(!idRegistro) doAxios(endPointSantos, optionsAxios)
         
         //!PUT, <form has name="id". Change a litle bit the OBJ Options.
-        else doAxios(`${endPointSantos}/${idRegistro}`, {...optionsAxios, method:'PUT'}) //El OBJ senala el method, por eso el simplemente axios()
+        else doAxios(`${endPointSantos}/${idRegistro}`, {...optionsAxios, method:'PUT'}) //Options OBJ says the method, that's why simply axios()
                 
     }
 })
